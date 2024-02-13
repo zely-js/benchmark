@@ -6,7 +6,7 @@ function main() {
     const app = express();
 
     app.get('/', function (req, res) {
-      require('./pages/index').get(req, res);
+      res.send('Hello World!');
     });
 
     app.listen(3001, async () => {

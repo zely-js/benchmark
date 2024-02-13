@@ -1,17 +1,23 @@
-const zely = require('zely');
+const zely = require('@zely-js/zely');
 const autocannon = require('autocannon');
 
 function start() {
   return new Promise((resolve, reject) => {
     zely
-      .Zely({
-        port: 3000,
-        prebuild: true,
+      .zely({
+        port: 3003,
+        globalImport: true,
       })
       .then((server) => {
-        server.listen(3000, async () => {
+        // zely doesn't support production mode yet in 3.0.0-alpha.8
+
+        process.env.NODE_ENV = 'development';
+
+        server.listen(3003, async () => {
+          await fetch('http://localhost:3003/');
           const result = await autocannon({
-            url: 'http://localhost:3000',
+            url: 'http://localhost:3003',
+            workers: 4,
           });
 
           const output = autocannon.printResult(result);
