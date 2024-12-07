@@ -1,4 +1,4 @@
-const zely = require('@zely-js/zely');
+const zely = require('zely');
 const autocannon = require('autocannon');
 
 function start() {
@@ -9,11 +9,9 @@ function start() {
         globalImport: true,
       })
       .then((server) => {
-        // zely doesn't support production mode yet in 3.0.0-alpha.8
-
         process.env.NODE_ENV = 'development';
 
-        server.listen(3003, async () => {
+        server.server.listen(3003, async () => {
           await fetch('http://localhost:3003/');
           const result = await autocannon({
             url: 'http://localhost:3003',
