@@ -11,13 +11,13 @@ $ node benchmark.js
 
 - **node** v20.9.0
 
-|                          | **Zely.js@4.0.0-beta.4** | **Express.js@4.21.2** | **Comparison Result (Zely 4.0.0 vs Express 4.12.2)** |
-| ------------------------ | ------------------------ | --------------------- | ---------------------------------------------------- |
-| **Avg Requests per Sec** | 15,163.6 Req/Sec         | 5,538.7 Req/Sec       | **2.74x faster**                                     |
-| **Avg Latency**          | 0.04 ms                  | 1.16 ms               | **29x shorter**                                      |
-| **Avg Bytes per Sec**    | 2.05 MB/Sec              | 1.32 MB/Sec           | **1.55x faster**                                     |
-| **Total Requests**       | 164k                     | 55k                   | **2.98x more**                                       |
-| **Total Bytes Read**     | 22.2 MB                  | 13.2 MB               | **1.68x more**                                       |
+|                          | **Zely.js@4.0.0-beta.4** | **Express.js@4.21.2** | **Comparison Result** |
+| ------------------------ | ------------------------ | --------------------- | --------------------- |
+| **Avg Requests per Sec** | 15,163.6 Req/Sec         | 5,538.7 Req/Sec       | **2.74x faster**      |
+| **Avg Latency**          | 0.04 ms                  | 1.16 ms               | **29x shorter**       |
+| **Avg Bytes per Sec**    | 2.05 MB/Sec              | 1.32 MB/Sec           | **1.55x faster**      |
+| **Total Requests**       | 164k                     | 55k                   | **2.98x more**        |
+| **Total Bytes Read**     | 22.2 MB                  | 13.2 MB               | **1.68x more**        |
 
 ### Zely.js@4.0.0-beta.4
 
