@@ -44,6 +44,7 @@ Req/Bytes counts sampled once per second.
 > Because there is an error in production mode (`4.0.0-beta.4`), to compile target page, server will fetch it before starting benchmark.
 
 > ```txt
+> // benchmark result without any fetching page
 > ┌─────────┬──────┬──────┬───────┬──────┬─────────┬─────────┬───────┐
 > │ Stat    │ 2.5% │ 50%  │ 97.5% │ 99%  │ Avg     │ Stdev   │ Max   │
 > ├─────────┼──────┼──────┼───────┼──────┼─────────┼─────────┼───────┤
